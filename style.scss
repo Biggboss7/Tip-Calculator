@@ -1,0 +1,25 @@
+$strong-cyan : hsl(172, 67%, 45%);
+$super-dark-cyan : hsl(183, 100%, 15%);
+$dark-gray-cyan : hsl(186, 14%, 43%);
+$gray-cyan : hsl(184, 14%, 56%);
+$light-gray-cyan : hsl(185, 41%, 84%);
+$super-light-gray-cyan : hsl(189, 41%, 97%);
+$white : hsl(0, 0%, 100%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+}
+
+body {
+    min-width: 375px;
+    min-height: 100vh;
+    background-color: $light-gray-cyan;
+}
+
