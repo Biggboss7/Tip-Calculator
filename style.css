@@ -13,4 +13,12 @@ body {
   min-width: 375px;
   min-height: 100vh;
   background-color: hsl(185deg, 41%, 84%);
+}
+
+.hidden {
+  display: none;
+}
+
+.text_center {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
