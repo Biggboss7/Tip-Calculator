@@ -20,6 +20,34 @@
         <h1 class="hidden">Tip Calculator</h1>
         <img src="images/logo.svg" alt="tip calculator logo">
     </header>
+    <main class="container">
+        <section class="calculator__container">
+            <div class="calculator__input-container">
+                <div class="input__container mb-2">
+                    <label class="text-label text-cyan" for="in-bill">Bill</label>
+                    <input id="in-bill" class="input input__bill" type="text" name="bill" placeholder="0"><br>
+                </div>
+                <div class="input__container mb-2">
+                    <label class="text-label text-cyan" for="in-tip">Select Tip %</label>
+                    <div class="calculator__btn-container">
+                        <button class="btn btn-tip">5%</button>
+                        <button class="btn btn-tip">10%</button>
+                        <button class="btn btn-tip">15%</button>
+                        <button class="btn btn-tip">25%</button>
+                        <button class="btn btn-tip">50%</button>
+                        <button class="btn btn-tip">Custom</button>
+                    </div>
+                </div>
+                <div class="input__container">
+                    <label class="text-label text-cyan" for="in-amountOfPeople">Number of People</label>
+                    <input id="in-amountOfPeople" class="input input__people" type="number" name="amountOfPeople" placeholder="0">
+                </div>
+            </div>
+            <div class="calculator__result-container">
+
+            </div>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

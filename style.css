@@ -21,4 +21,71 @@ body {
 
 .text_center {
   text-align: center;
+}
+
+.calculator__container {
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(350px, 1fr));
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 25px;
+}
+
+.calculator__btn-container {
+  display: grid;
+  grid-template-columns: repeat(3, 117px);
+  grid-template-rows: repeat(2, 48px);
+  gap: 14px;
+}
+
+.input {
+  width: 100%;
+  height: 48px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(183deg, 100%, 15%);
+  text-align: end;
+  background-color: hsl(189deg, 41%, 97%);
+  background-repeat: no-repeat;
+  background-position: 10px 15px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.input::-moz-placeholder {
+  font-family: "Space Mono", monospace;
+  color: hsl(184deg, 14%, 56%);
+}
+
+.input:-ms-input-placeholder {
+  font-family: "Space Mono", monospace;
+  color: hsl(184deg, 14%, 56%);
+}
+
+.input::placeholder {
+  font-family: "Space Mono", monospace;
+  color: hsl(184deg, 14%, 56%);
+}
+
+.input__bill {
+  background-image: url("images/icon-dollar.svg");
+}
+
+.input__people {
+  background-image: url("images/icon-person.svg");
+}
+
+.btn {
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.btn-tip {
+  background-color: hsl(183deg, 100%, 15%);
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
 }/*# sourceMappingURL=style.css.map */
