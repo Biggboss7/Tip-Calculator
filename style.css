@@ -78,6 +78,10 @@ body {
   border-style: none;
 }
 
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .input::-moz-placeholder {
   font-family: "Space Mono", monospace;
   color: hsl(184deg, 14%, 56%);
