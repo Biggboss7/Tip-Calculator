@@ -40,8 +40,22 @@ body {
     margin-bottom: 0.8rem;
 }
 
+.text-description {
+    font-size: 13px;
+}
+
+.text-result {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $strong-cyan;
+}
+
 .text-cyan {
     color: $dark-gray-cyan;
+}
+
+.text-white {
+    color: $white;
 }
 
 .mb-2 {
@@ -118,6 +132,28 @@ body {
 }
 
 .btn-tip:hover {
+    color: $super-dark-cyan;
+    background-color: $strong-cyan;
+}
+
+.calculator__result-container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $super-dark-cyan;
+    border-radius: 15px;
+}
+
+.result__tip-amount, .result__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-reset {
+    width: 100%;
+    text-transform: uppercase;
     color: $super-dark-cyan;
     background-color: $strong-cyan;
 }

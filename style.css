@@ -32,8 +32,22 @@ body {
   margin-bottom: 0.8rem;
 }
 
+.text-description {
+  font-size: 13px;
+}
+
+.text-result {
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(172deg, 67%, 45%);
+}
+
 .text-cyan {
   color: hsl(186deg, 14%, 43%);
+}
+
+.text-white {
+  color: hsl(0deg, 0%, 100%);
 }
 
 .mb-2 {
@@ -113,13 +127,32 @@ body {
 
 .btn-tip {
   background-color: hsl(183deg, 100%, 15%);
-  font-family: inherit;
-  font-size: 1.5rem;
-  font-weight: 700;
   color: hsl(0deg, 0%, 100%);
 }
 
 .btn-tip:hover {
+  color: hsl(183deg, 100%, 15%);
+  background-color: hsl(172deg, 67%, 45%);
+}
+
+.calculator__result-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(183deg, 100%, 15%);
+  border-radius: 15px;
+}
+
+.result__tip-amount, .result__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-reset {
+  width: 100%;
+  text-transform: uppercase;
   color: hsl(183deg, 100%, 15%);
   background-color: hsl(172deg, 67%, 45%);
 }/*# sourceMappingURL=style.css.map */
