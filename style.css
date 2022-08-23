@@ -12,14 +12,35 @@ html {
 body {
   min-width: 375px;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: hsl(185deg, 41%, 84%);
 }
 
-.hidden {
+.container {
+  padding: 0 260px;
+  margin-bottom: 5.5rem;
+}
+
+.text-hidden {
   display: none;
 }
 
-.text_center {
+.text-label {
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.text-cyan {
+  color: hsl(186deg, 14%, 43%);
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.header__content-wrapper {
   text-align: center;
 }
 
