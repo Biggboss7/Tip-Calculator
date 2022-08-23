@@ -59,7 +59,7 @@ body {
 }
 
 .calculator__container {
-  padding: 3rem 2rem;
+  padding: 3rem;
   display: flex;
   justify-content: space-between;
   background-color: hsl(0deg, 0%, 100%);
@@ -73,7 +73,6 @@ body {
 .calculator__btn-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 48px);
   gap: 14px;
 }
 
@@ -120,6 +119,10 @@ body {
 }
 
 .btn {
+  height: 3rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 700;
   border-radius: 5px;
   border-style: none;
   cursor: pointer;
