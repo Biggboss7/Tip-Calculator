@@ -126,15 +126,20 @@ body {
     cursor: pointer;
 }
 
-.btn-tip {
+.btn-tip_cyan {
     background-color: $super-dark-cyan;
     color: $white;
 }
 
-.btn-tip:hover {
+.btn-tip_cyan:hover, .selected {
     color: $super-dark-cyan;
     background-color: $strong-cyan;
 }
+
+.btn:active {
+    background-color: $light-gray-cyan;
+}
+
 
 .calculator__result-container {
     padding: 2rem;

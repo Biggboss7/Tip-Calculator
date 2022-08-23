@@ -128,14 +128,18 @@ body {
   cursor: pointer;
 }
 
-.btn-tip {
+.btn-tip_cyan {
   background-color: hsl(183deg, 100%, 15%);
   color: hsl(0deg, 0%, 100%);
 }
 
-.btn-tip:hover {
+.btn-tip_cyan:hover, .selected {
   color: hsl(183deg, 100%, 15%);
   background-color: hsl(172deg, 67%, 45%);
+}
+
+.btn:active {
+  background-color: hsl(185deg, 41%, 84%);
 }
 
 .calculator__result-container {
