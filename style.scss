@@ -54,15 +54,19 @@ body {
 
 .calculator__container {
     padding: 3rem 2rem;
-    display: grid;
-    grid-template-columns: repeat(autofit, minmax(350px, 1fr));
+    display: flex;
+    justify-content: space-between;
     background-color: $white;
     border-radius: 25px;
 }
 
+.calculator__input-container, .calculator__result-container {
+    width: 48%;
+}
+
 .calculator__btn-container {
     display: grid;
-    grid-template-columns: repeat(3, 117px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 48px);
     gap: 14px;
 }
@@ -70,7 +74,7 @@ body {
 .input {
     width: 100%;
     height: 48px;
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 1.5rem;
     font-weight: 700;
     color: $super-dark-cyan;
