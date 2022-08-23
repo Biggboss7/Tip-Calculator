@@ -109,4 +109,9 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   color: hsl(0deg, 0%, 100%);
+}
+
+.btn-tip:hover {
+  color: hsl(183deg, 100%, 15%);
+  background-color: hsl(172deg, 67%, 45%);
 }/*# sourceMappingURL=style.css.map */
