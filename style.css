@@ -162,4 +162,8 @@ body {
   text-transform: uppercase;
   color: hsl(183deg, 100%, 15%);
   background-color: hsl(172deg, 67%, 45%);
+}
+
+.btn-reset:disabled {
+  background-color: #0D686D;
 }/*# sourceMappingURL=style.css.map */

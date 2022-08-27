@@ -162,3 +162,7 @@ body {
     color: $super-dark-cyan;
     background-color: $strong-cyan;
 }
+
+.btn-reset:disabled {
+    background-color: #0D686D;
+}

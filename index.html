@@ -23,21 +23,13 @@
         </article>
     </header>
     <main class="container">
-        <section class="calculator__container">
-            <div class="calculator__input-container">
-                <div class="input__container mb-2">
-                    <label class="text-label text-cyan" for="in-bill">Bill</label>
-                    <input id="in-bill" class="input input__bill" type="number" name="bill" placeholder="0" min="0"><br>
-                </div>
-                <div class="input__container mb-2">
-                    <label class="text-label text-cyan" for="in-tip">Select Tip %</label>
-                    <div class="calculator__btn-container">
-                        <button id="5" class="btn btn-tip btn-tip_cyan">5%</button>
-                        <button id="10" class="btn btn-tip btn-tip_cyan">10%</button>
-                        <button id="15" class="btn btn-tip btn-tip_cyan">15%</button>
-                        <button id="25" class="btn btn-tip btn-tip_cyan">25%</button>
-                        <button id="50" class="btn btn-tip btn-tip_cyan">50%</button>
-                        <input id="custom-tip" class="input btn-tip" type="number"  min="0" placeholder="Custom">
+        <form id="form">
+            <section class="calculator__container">
+                <div class="calculator__input-container">
+                    <div id="form-bill" class="input__container mb-2 error">
+                        <label class="text-label text-cyan" for="in-bill">Bill</label>
+                        <input id="in-bill" class="input input__bill" type="number" name="bill" placeholder="0" min="0"><br>
+                        <p class="error__message">Error Message</p>
                     </div>
                 </div>
                 <div class="input__container">
@@ -65,10 +57,10 @@
                             $0.00
                         </p>
                     </div>
+                    <button type="reset" class="btn btn-reset" disabled>Reset</button>
                 </div>
-                <button class="btn btn-reset">Reset</button>
-            </div>
-        </section>
+            </section>
+        </form>
     </main>
     <script src="script.js"></script>
 </body>
