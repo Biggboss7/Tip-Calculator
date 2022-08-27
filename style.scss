@@ -84,6 +84,10 @@ body {
     gap: 14px;
 }
 
+.input__container {
+    position: relative;
+}
+
 .input {
     width: 100%;
     height: 48px;
@@ -97,6 +101,11 @@ body {
     background-position: 10px 15px;
     border-radius: 5px;
     border-style: none;
+}
+
+.input:focus {
+    border: 2px solid $strong-cyan;
+    outline: none;
 }
 
 .input::-webkit-inner-spin-button {
@@ -116,11 +125,29 @@ body {
     background-image: url("images/icon-person.svg");
 }
 
+.error__message {
+    display: flex;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    color: red;
+    visibility: hidden;
+}
+
+.input__container.error > input {
+    border: 2px solid red;
+}
+
+.input__container.error .error__message {
+    visibility: visible;
+}
+
 .btn {
-    height: 3rem;
+    padding: 0.5rem;
     font-family: inherit;
     font-size: 1.5rem;
     font-weight: 700;
+    text-align: center;
     border-radius: 5px;
     border-style: none;
     cursor: pointer;
@@ -139,7 +166,6 @@ body {
 .btn:active {
     background-color: $light-gray-cyan;
 }
-
 
 .calculator__result-container {
     padding: 2rem;

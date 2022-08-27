@@ -31,31 +31,44 @@
                         <input id="in-bill" class="input input__bill" type="number" name="bill" placeholder="0" min="0"><br>
                         <p class="error__message">Error Message</p>
                     </div>
-                </div>
-                <div class="input__container">
-                    <label class="text-label text-cyan" for="in-amountOfPeople">Number of People</label>
-                    <input id="in-amountOfPeople" class="input input__people" type="number" name="amountOfPeople" placeholder="0" min="0">
-                </div>
-            </div>
-            <div class="calculator__result-container">
-                <div class="result__display">
-                    <div class="result__tip-amount mb-2">
-                        <p class="text-white">
-                            Tip Amount <br>
-                            <span class="text-description text-cyan"> / person</span>
-                        </p>
-                        <p class="text-result">
-                            $0.00
-                        </p>
+                    <div id="form-tip" class="input__container mb-2 error">
+                        <label class="text-label text-cyan" for="in-tip">Select Tip %</label>
+                        <div class="calculator__btn-container">
+                            <div id="5" class="btn btn-tip btn-tip_cyan">5%</div>
+                            <div id="10" class="btn btn-tip btn-tip_cyan">10%</div>
+                            <div id="15" class="btn btn-tip btn-tip_cyan">15%</div>
+                            <div id="25" class="btn btn-tip btn-tip_cyan">25%</div>
+                            <div id="50" class="btn btn-tip btn-tip_cyan">50%</div>
+                            <input id="custom-tip" class="input btn-tip" type="number" min="0" placeholder="Custom">
+                            <p class="error__message">Error Message</p>
+                        </div>
                     </div>
-                    <div class="result__total">
-                        <p class="text-white">
-                            Total <br>
-                            <span class="text-description text-cyan"> / person</span>
-                        </p>
-                        <p class="text-result">
-                            $0.00
-                        </p>
+                    <div id="form-people" class="input__container error">
+                        <label class="text-label text-cyan" for="in-amountOfPeople">Number of People</label>
+                        <input id="in-amountOfPeople" class="input input__people" type="number" name="amountOfPeople" placeholder="0" min="0">
+                        <p class="error__message">Error Message</p>
+                    </div>
+                </div>
+                <div class="calculator__result-container">
+                    <div class="result__display">
+                        <div class="result__tip-amount mb-2">
+                            <p class="text-white">
+                                Tip Amount <br>
+                                <span class="text-description text-cyan"> / person</span>
+                            </p>
+                            <p class="text-result">
+                                $0.00
+                            </p>
+                        </div>
+                        <div class="result__total">
+                            <p class="text-white">
+                                Total <br>
+                                <span class="text-description text-cyan"> / person</span>
+                            </p>
+                            <p class="text-result">
+                                $0.00
+                            </p>
+                        </div>
                     </div>
                     <button type="reset" class="btn btn-reset" disabled>Reset</button>
                 </div>
