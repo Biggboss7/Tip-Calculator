@@ -27,7 +27,7 @@
             <div class="calculator__input-container">
                 <div class="input__container mb-2">
                     <label class="text-label text-cyan" for="in-bill">Bill</label>
-                    <input id="in-bill" class="input input__bill" type="number" name="bill" placeholder="0"><br>
+                    <input id="in-bill" class="input input__bill" type="number" name="bill" placeholder="0" min="0"><br>
                 </div>
                 <div class="input__container mb-2">
                     <label class="text-label text-cyan" for="in-tip">Select Tip %</label>
@@ -37,12 +37,12 @@
                         <button id="15" class="btn btn-tip btn-tip_cyan">15%</button>
                         <button id="25" class="btn btn-tip btn-tip_cyan">25%</button>
                         <button id="50" class="btn btn-tip btn-tip_cyan">50%</button>
-                        <input class="input btn-tip" type="text" placeholder="Custom">
+                        <input id="custom-tip" class="input btn-tip" type="number"  min="0" placeholder="Custom">
                     </div>
                 </div>
                 <div class="input__container">
                     <label class="text-label text-cyan" for="in-amountOfPeople">Number of People</label>
-                    <input id="in-amountOfPeople" class="input input__people" type="number" name="amountOfPeople" placeholder="0">
+                    <input id="in-amountOfPeople" class="input input__people" type="number" name="amountOfPeople" placeholder="0" min="0">
                 </div>
             </div>
             <div class="calculator__result-container">
