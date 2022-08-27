@@ -26,12 +26,12 @@
         <form id="form">
             <section class="calculator__container">
                 <div class="calculator__input-container">
-                    <div id="form-bill" class="input__container mb-2 error">
+                    <div id="form-bill" class="input__container mb-2">
                         <label class="text-label text-cyan" for="in-bill">Bill</label>
                         <input id="in-bill" class="input input__bill" type="number" name="bill" placeholder="0" min="0"><br>
                         <p class="error__message">Error Message</p>
                     </div>
-                    <div id="form-tip" class="input__container mb-2 error">
+                    <div id="form-tip" class="input__container mb-2">
                         <label class="text-label text-cyan" for="in-tip">Select Tip %</label>
                         <div class="calculator__btn-container">
                             <div id="5" class="btn btn-tip btn-tip_cyan">5%</div>
@@ -43,10 +43,10 @@
                             <p class="error__message">Error Message</p>
                         </div>
                     </div>
-                    <div id="form-people" class="input__container error">
+                    <div id="form-people" class="input__container">
                         <label class="text-label text-cyan" for="in-amountOfPeople">Number of People</label>
                         <input id="in-amountOfPeople" class="input input__people" type="number" name="amountOfPeople" placeholder="0" min="0">
-                        <p class="error__message">Error Message</p>
+                        <p class="error__message">Can't be zero</p>
                     </div>
                 </div>
                 <div class="calculator__result-container">
@@ -70,7 +70,7 @@
                             </p>
                         </div>
                     </div>
-                    <button type="reset" class="btn btn-reset" disabled>Reset</button>
+                    <button id="reset-btn" type="reset" class="btn btn-reset" disabled>Reset</button>
                 </div>
             </section>
         </form>
