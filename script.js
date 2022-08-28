@@ -62,6 +62,8 @@ function totalProPerson() {
 }
 
 resetButton.addEventListener("click", function () {
+    billAmount.value = "";
+    amountOfPeople.value = "";
     document.getElementById("per/tip").innerHTML = "$0.00";
     document.getElementById("per/total").innerHTML = "$0.00";
     tipAmount = "";
