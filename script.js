@@ -38,14 +38,34 @@ amountOfPeople.addEventListener("change", function () {
     } else {
         amountOfPeople.parentElement.classList.remove("error");
     }
-    isResetAvail();
-})
+    isDataCollected();
+});
 
-function isResetAvail() {
-    if (billAmount.value === "" || amountOfPeople.value === "" || tipAmount ==="") {
+function isDataCollected() {
+    if (billAmount.value === "" || amountOfPeople.value === "" || tipAmount === "") {
         resetButton.disabled = true;
     } else {
+        tipProPerson();
+        totalProPerson();
         resetButton.disabled = false
     }
 };
+
+function tipProPerson() {
+    result = ((Number(billAmount.value)*tipAmount)/100)/Number(amountOfPeople.value);
+    document.getElementById("per/tip").innerHTML = `$${result.toFixed(2)}`;
+}
+
+function totalProPerson() {
+    const result = (Number(billAmount.value) + (Number(billAmount.value)*tipAmount/100))/Number(amountOfPeople.value);
+    document.getElementById("per/total").innerHTML = `$${result.toFixed(2)}`;
+}
+
+resetButton.addEventListener("click", function () {
+    document.getElementById("per/tip").innerHTML = "$0.00";
+    document.getElementById("per/total").innerHTML = "$0.00";
+    tipAmount = "";
+    previousSelectedBtn.classList.remove("selected");
+    resetButton.disabled = true;
+})
 
