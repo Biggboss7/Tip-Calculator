@@ -37,7 +37,8 @@ body {
 }
 
 .text-result {
-  font-size: 3rem;
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.6478873239rem + 1.5023474178vw, 3rem);
   font-weight: 700;
   color: hsl(172deg, 67%, 45%);
 }
@@ -193,4 +194,21 @@ body {
 
 .btn-reset:disabled {
   background-color: #0D686D;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 1rem;
+  }
+  .calculator__container {
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+  .calculator__input-container, .calculator__result-container {
+    padding: 1rem;
+    width: 100%;
+  }
+  .calculator__input-container, .result__total {
+    margin-bottom: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
