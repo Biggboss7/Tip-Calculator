@@ -1,12 +1,12 @@
 const listOfTipButton = document.querySelectorAll(".btn-tip");
 let previousSelectedBtn;
-let tipAmount;
+let tipAmount="";
 const billAmount = document.getElementById("in-bill");
 const amountOfPeople = document.getElementById("in-amountOfPeople");
 const resetButton = document.getElementById("reset-btn");
 
 billAmount.addEventListener("change", function () {
-    isResetAvail();
+    isDataCollected();
 })
 
 listOfTipButton.forEach(button => {
@@ -28,7 +28,7 @@ listOfTipButton.forEach(button => {
             previousSelectedBtn.classList.add("selected");
             tipAmount = Number(previousSelectedBtn.id);
         }
-        isResetAvail();
+        isDataCollected();
     });
 });
 
