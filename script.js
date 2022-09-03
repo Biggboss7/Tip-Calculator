@@ -4,6 +4,7 @@ let tipAmount="";
 const billAmount = document.getElementById("in-bill");
 const amountOfPeople = document.getElementById("in-amountOfPeople");
 const resetButton = document.getElementById("reset-btn");
+const customTip = document.querySelector(".calculator__btn-container input");
 
 billAmount.addEventListener("change", function () {
     isDataCollected();
@@ -68,6 +69,7 @@ resetButton.addEventListener("click", function () {
     document.getElementById("per/total").innerHTML = "$0.00";
     tipAmount = "";
     previousSelectedBtn.classList.remove("selected");
+    customTip.value = 0;
     resetButton.disabled = true;
 })
 
