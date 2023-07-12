@@ -34,7 +34,7 @@ Mobile Preview\
 ### Links
 
 - Solution URL: https://github.com/Biggboss7/Tip-Calculator/
-- Live Site URL: https://biggboss7.github.io/Tip-Calculator/
+- Live Site URL: https://precious-froyo-b9cdbe.netlify.app
 
 ## My process
 
